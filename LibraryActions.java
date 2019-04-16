@@ -1,7 +1,88 @@
 import java.util.ArrayList;
 
-class LibraryActions
+public class LibraryActions
 {
+
+	class Book
+	{
+		private String bookTitle;
+		private String serialNumber;
+		private String authorName;
+		private String publisher;
+		private int publishedYear;
+		private int bookQuantity;
+
+		public Book(String bookTitle, String serialNumber, String authorName, String publisher, int publishedYear)
+		{
+			this.bookTitle = bookTitle;
+			this.serialNumber = serialNumber;
+			this.authorName = authorName;
+			this.publisher = publisher;
+			this.publishedYear = publishedYear;
+		}
+
+		public String getBookTitle()
+		{
+			return this.bookTitle;
+		}
+
+		public void setBookTitle(String bookTitle)
+		{
+			this.bookTitle = bookTitle;
+		}
+
+		public String getSerialNumber()
+		{
+			return this.serialNumber;
+		}
+
+		public void setSerialNumber(String serialNumber)
+		{
+			this.serialNumber = serialNumber;
+		}
+
+		public String getAuthorName()
+		{
+			return this.authorName;
+		}
+
+		public void setAuthorName(String authorName)
+		{
+			this.authorName = authorName;
+		}
+
+		public String getPublisher()
+		{
+			return this.publisher;
+		}
+
+		public void setPublisher(String publisher)
+		{
+			this.publisher = publisher;
+		}
+
+		public int getBookQuantity()
+		{
+			return this.bookQuantity;
+		}
+
+		public void setBookQuantity(int bookQuantity)
+		{
+			this.bookQuantity = bookQuantity;
+		}
+
+		public int getPublishedDate()
+		{
+			return this.publishedYear;
+		}
+
+		public void setPublishedDate(int publishedYear)
+		{
+			this.publishedYear = publishedYear;
+		}	
+	}
+	
+	
 	private final ArrayList<Book> books;
 
 	public LibraryActions(ArrayList<Book> books)
